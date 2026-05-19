@@ -6,12 +6,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:{}
+permissions: {}
 
 concurrency:
   group: production-deploy
   cancel-in-progress: false
-  
+
 jobs:
   build:
    uses: ./.github/workflows/_build.yml
